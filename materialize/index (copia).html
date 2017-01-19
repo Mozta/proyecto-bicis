@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Registro de bicicletas</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="brown lighten-2" role="navigation">
+        <div class="nav-wrapper">
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Bicicletas la meta</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="consulta.html">Consulta</a></li>
+                </ul>
+            </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="header center orange-text">Registro de clientes</h2>
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nombre" type="text" class="validate">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telefono" type="tel" class="validate">
+                        <label for="telefono">Telefono</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s0.5">
+                        <i class="fa fa-bicycle fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                          <option value="" disabled selected>Elige una opción</option>
+                          <option value="1">Alubike</option>
+                          <option value="2">Benotto</option>
+                          <option value="3">Cannondale</option>
+                          <option value="4">Magistroni</option>
+                          <option value="5">Mercurio</option>
+                          <option value="6">Scott</option>
+                          <option value="7">Specialized</option>
+                          <option value="8">Trek</option>
+                          <option value="9">Turbo</option>
+                          <option value="10">Veloci</option>
+                          <option value="11">Otra</option>
+                        </select>
+                        <label>Marca</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <select>
+                          <option value="" disabled selected>Elige una opción</option>
+                          <option value="1">12"</option>
+                          <option value="2">14"</option>
+                          <option value="3">16"</option>
+                          <option value="4">20"</option>
+                          <option value="5">24"</option>
+                          <option value="6">25"</option>
+                          <option value="7">26"</option>
+                          <option value="8">27"</option>
+                          <option value="9">28"</option>
+                          <option value="10">29"</option>
+                        </select>
+                        <label>Talla</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select>
+                          <option value="" disabled selected>Elige una opción</option>
+                          <option value="1">Amarillo</option>
+                          <option value="2">Azul</option>
+                          <option value="3">Morado</option>
+                          <option value="4">Naranja</option>
+                          <option value="5">Negro</option>
+                          <option value="6">Rojo</option>
+                          <option value="7">Verde</option>
+                          <option value="8">Otro</option>
+                        </select>
+                        <label>Color</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">perm_contact_calendar</i>
+                        <label for="birthdate" class="">Fecha</label>
+                        <input type="date" class="datepicker">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">assignment</i>
+                        <input id="servicio" type="text" class="validate">
+                        <label for="servicio">Servicio</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">credit_card</i>
+                        <input id="pago" type="text" class="validate">
+                        <label for="pago">Pago</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">textsms</i>
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label for="autocomplete-input">Autocomplete</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/pickadate.js"></script>
+
+</body>
+
+</html>
