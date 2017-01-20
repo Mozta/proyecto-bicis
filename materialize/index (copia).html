@@ -26,7 +26,7 @@
 
 
     <div class="container">
-        <h2 class="header center orange-text">Registro de clientes</h2>
+        <h2 class="header center brown-text">Registro de clientes</h2>
 
         <div class="row">
             <form class="col s12">
@@ -99,36 +99,42 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">perm_contact_calendar</i>
-                        <label for="birthdate" class="">Fecha</label>
-                        <input type="date" class="datepicker">
+                        <label for="fecha" class="">Fecha</label>
+                        <input id="fecha" type="text" class="datepicker picker__input" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="birthdate_root">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
+                    <div class="input-field col s8">
                         <i class="material-icons prefix">assignment</i>
                         <input id="servicio" type="text" class="validate">
                         <label for="servicio">Servicio</label>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">credit_card</i>
-                        <input id="pago" type="text" class="validate">
-                        <label for="pago">Pago</label>
+                    <div class="input-field col s0.5">
+                        <i class="fa fa-usd fa-lg" aria-hidden="true"></i>
                     </div>
+                    <div class="input-field col s2">
+                        <input id="precio" type="text" class="validate">
+                        <label for="precio">Precio</label>
+                    </div>
+                    <div>
+                        <a class="btn-floating btn-large waves-effect waves-light brown lighten-1" id="btAdd"><i class="material-icons">add</i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light brown lighten-1" id="btRemove"><i class="material-icons">remove</i></a>
+                    </div>
+                    <div class="camposdinamicos"> </div>
                 </div>
 
                 <div class="row">
-                    <div class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <i class="material-icons prefix">textsms</i>
-                          <input type="text" id="autocomplete-input" class="autocomplete">
-                          <label for="autocomplete-input">Autocomplete</label>
-                        </div>
-                      </div>
+                    <div class="col s2 offset-s6">
+                        <h5>Total</h5>
                     </div>
-                  </div>
+                    <div class="input-field col s0.5">
+                        <i class="fa fa-usd fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="col s2">
+                        <h5>125.0</h5>
+                    </div>
+                </div>
+
             </form>
         </div>
     </div>
